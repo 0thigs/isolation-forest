@@ -4,9 +4,11 @@ Trabalho do **Grupo 4** para a disciplina de detecção de anomalias com Python.
 
 ## Apresentação
 
-Slides: https://claude.ai/artifact/BJWVJZQuTLCgdoNqUrwBs4
+Arquivo PowerPoint: [`apresentacao/Isolation_Forest_Grupo4.pptx`](apresentacao/Isolation_Forest_Grupo4.pptx)
 
-A fonte dos slides está em [`apresentacao/`](apresentacao/) (um arquivo HTML por slide e o índice `deck.json`).
+O arquivo é gerado pelo script [`apresentacao/build_pptx.js`](apresentacao/build_pptx.js) (pptxgenjs). Versão online para visualização: https://claude.ai/artifact/BJWVJZQuTLCgdoNqUrwBs4
+
+A fonte HTML dos slides também está em [`apresentacao/slides/`](apresentacao/slides/).
 
 ## Roteiro da apresentação
 
