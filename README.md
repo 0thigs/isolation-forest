@@ -31,10 +31,11 @@ Pasta [`pratica/`](pratica/):
 
 ## Integrantes
 
-- [Nome 1]
-- [Nome 2]
-- [Nome 3]
-- Cauã
+- Thiago Martins
+- Gabriel da Silva
+- Kauan Fonseca
+- João Pedro Carvalho
+- João Gabriel
 
 ## Entregas
 
