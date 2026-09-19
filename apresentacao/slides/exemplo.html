@@ -1,0 +1,29 @@
+<section id="exemplo" data-transition="fade" style="background:#0F1F1C; color:#F4F6F3; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+  <p style="font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#2FA37A">Funcionamento na prática</p>
+  <h2 style="font-family:'Space Grotesk', Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1">Em Python são poucas linhas</h2>
+  <div style="display:flex; gap:48px">
+    <div style="width:1000px; background:#0A1614; border:1px solid #2A3E39; border-radius:16px; padding:40px; display:flex; flex-direction:column">
+      <p style="font-family:'Courier New', monospace; font-size:28px; line-height:1.6; color:#F4F6F3"><span style="color:#7FB3A3">from</span> sklearn.ensemble <span style="color:#7FB3A3">import</span> IsolationForest<br><span style="color:#7FB3A3">import</span> pandas <span style="color:#7FB3A3">as</span> pd<br><br>df = pd.read_csv(<span style="color:#E8B47A">"vendas.csv"</span>)<br>X = df[[<span style="color:#E8B47A">"valor"</span>, <span style="color:#E8B47A">"qtd"</span>, <span style="color:#E8B47A">"hora"</span>]]<br>X = X.fillna(X.median())<br><br>modelo = IsolationForest(<br>    n_estimators=<span style="color:#E8B47A">100</span>,<br>    contamination=<span style="color:#E8B47A">0.05</span>,<br>    random_state=<span style="color:#E8B47A">42</span>)<br><br>df[<span style="color:#E8B47A">"score"</span>] = modelo.fit(X).decision_function(X)<br>df[<span style="color:#E8B47A">"anomalia"</span>] = modelo.predict(X)  <span style="color:#6A8078"># -1 = anomalia</span></p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:24px">
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <h3 style="font-size:28px; font-weight:600; color:#2FA37A">n_estimators</h3>
+        <p style="font-size:26px; color:#B7C7C1; line-height:1.4">Quantidade de árvores. 100 costuma bastar</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <h3 style="font-size:28px; font-weight:600; color:#2FA37A">contamination</h3>
+        <p style="font-size:26px; color:#B7C7C1; line-height:1.4">Fração esperada de anomalias. Define o limiar</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <h3 style="font-size:28px; font-weight:600; color:#2FA37A">max_samples</h3>
+        <p style="font-size:26px; color:#B7C7C1; line-height:1.4">Tamanho da subamostra por árvore. Padrão 256</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <h3 style="font-size:28px; font-weight:600; color:#E8623A">predict</h3>
+        <p style="font-size:26px; color:#B7C7C1; line-height:1.4">Retorna 1 para normal e -1 para anomalia</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; right:128px; bottom:64px; font-size:24px; color:#B7C7C1; width:120px; text-align:right">9</p>
+  <aside>Mostrar que a técnica é acessível. O trabalho difícil está em preparar os dados e interpretar.</aside>
+</section>

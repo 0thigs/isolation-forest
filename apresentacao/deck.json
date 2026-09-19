@@ -1,0 +1,19 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-09-18T14:00:00Z"},
+  "title": "Isolation Forest",
+  "cover": "cover",
+  "order": ["cover","programa","problema","definicao","porque","historico","funcionamento","score","exemplo","aplicacoes","limitacoes","casos","tendencias","pratica-dataset","pratica-etapas","pratica-resultados","fim"],
+  "sections": {
+    "s1": {"description": "Abertura e roteiro da apresentação", "start": "cover"},
+    "s2": {"description": "O problema da detecção de anomalias e a definição do Isolation Forest", "start": "problema"},
+    "s3": {"description": "Como a técnica funciona por dentro", "start": "funcionamento"},
+    "s4": {"description": "Onde se aplica, onde falha e para onde caminha", "start": "aplicacoes"},
+    "s5": {"description": "O projeto prático com CSV e Python", "start": "pratica-dataset"}
+  },
+  "faces": {
+    "space-grotesk": {"family": "Space Grotesk", "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"}
+  },
+  "designSystems": []
+}
